@@ -1,0 +1,18 @@
+pipeline {
+	agent node
+	stages {
+		stage ('Echo test') {
+			agent any
+			steps {
+				echo 'Hello Poohpeer'
+			}
+		}
+		stage ('Echo test #2') {
+			agent any
+			steps {
+				echo 'Hello Schultz'
+			}
+		}
+	}
+}
+		
